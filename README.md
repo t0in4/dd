@@ -11,27 +11,27 @@ Delete any previous partition table:
 Create the new ones:
 
 # fdisk /dev/sdb
-> n
-> p
-> 1
+# n
+# p
+# 1
 (+1GB)
-> a
-> 1
+# a
+# 1
 (toggles boot flag)
-> t
-> c
+# t
+# c
 (filesystem type)
-> n
-> p
-> 2
+# n
+# p
+# 2
 (defaults)
-> t
+# t
 (specify 2nd partition)
-> c
+# c
 (filesystem type)
-> p
+# p
 (prints current configuration)
-> w
+# w
 (write the new table and quit)
 
 Create the filesystems:
